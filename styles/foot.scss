@@ -1,0 +1,211 @@
+footer {
+  @include width_height(100%, 500px);
+  @include flexCentetSpaceEvenly(flex, space-evenly, center);
+  padding: 15px;
+  margin-top: 70px;
+
+  @media screen and(max-width: 1500px) {
+    @include width_height(100%, 450px);
+  }
+
+  @media screen and(max-width: 1300px) {
+    font-size: 0.6em;
+    @include width_height(100%, 400px);
+  }
+
+  @media screen and(max-width: 750px) {
+    @include width_height(100%, 300px);
+    margin-top: 0px;
+    padding: 0px;
+  }
+
+  .contact {
+    @include width_height(30%, 100%);
+
+    .logo_footer {
+      @include width_height(350px, 350px);
+      background: url(../assets/logo.png) $nr_tp_c;
+      @include backgroundSize_marginTop(contain, 50px);
+
+      @media screen and(max-width: 1500px) {
+        @include width_height(250px, 250px);
+      }
+
+      @media screen and(max-width: 1300px) {
+        @include width_height(200px, 200px);
+      }
+
+      @media screen and(max-width: 750px) {
+        @include width_height(180px, 180px);
+      }
+
+      @media screen and(max-width: 610px) {
+        @include width_height(130px, 130px);
+
+        @media screen and(max-width: 400px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .contact_ {
+    @include flexStretchCenter(flex, stretch, center);
+    @include width_height(850px, 100%);
+    color: burlywood;
+    font-size: 1.2em;
+    margin-top: 0px;
+    text-align: left;
+
+    h2 {
+      margin-bottom: 30px;
+      text-decoration: overline;
+      width: 100%;
+
+      @media screen and(max-width: 1500px) {
+        font-size: 1.1em;
+      }
+
+      @media screen and(max-width: 1300px) {
+        font-size: 1em;
+      }
+    }
+
+    .event_list {
+      @include flexSpaceBetweenCenterColumn(
+        flex,
+        space-between,
+        center,
+        column
+      );
+      @include width_height(100%, 50%);
+
+      .event_list__ {
+        text-align: left;
+        transition-duration: 5s;
+        @include width_height(100%, 25px);
+
+        @media screen and(max-width: 1500px) {
+          font-size: 0.9em;
+        }
+
+        @media screen and(max-width: 1300px) {
+          font-size: 0.8em;
+        }
+
+        @media screen and(max-width: 1010px) {
+          font-size: 0.7em;
+        }
+
+        &:hover {
+          border-radius: 5px;
+          background-color: rgb(36, 36, 46);
+          color: darkgoldenrod;
+          transition-duration: 300ms;
+        }
+      }
+    }
+  }
+
+  .contact__ {
+    @include flexSpaceEvenlyCentetColumn(flex, space-evenly, center, column);
+    @include width_height(490px, 100%);
+
+    .social_network_name {
+      @include flexCentetSpaceEvenly(flex, space-evenly, center);
+      margin-top: 15px;
+
+      @media screen and(max-width: 1500px) {
+        font-size: 0.9em;
+      }
+
+      @media screen and(max-width: 1300px) {
+        font-size: 0.8em;
+      }
+
+      .img_1 {
+        @include width_height(40px, 40px);
+        background: url(../assets/vk.png) $nr_tp_c;
+        @include center_contain(center, contain);
+
+        @media screen and(max-width: 1500px) {
+          @include width_height(30px, 30px);
+        }
+
+        @media screen and(max-width: 1300px) {
+          @include width_height(25px, 25px);
+        }
+      }
+
+      .img_2 {
+        @include width_height(40px, 40px);
+        background: url(../assets/instagram.png) $nr_tp_c;
+        @include center_contain(center, contain);
+
+        @media screen and(max-width: 1500px) {
+          @include width_height(30px, 30px);
+        }
+
+        @media screen and(max-width: 1300px) {
+          @include width_height(25px, 25px);
+        }
+      }
+
+      .img_3 {
+        @include width_height(40px, 40px);
+        background: url(../assets/ok.png) $nr_tp_c;
+        @include center_contain(center, contain);
+
+        @media screen and(max-width: 1500px) {
+          @include width_height(30px, 30px);
+        }
+
+        @media screen and(max-width: 1300px) {
+          @include width_height(25px, 25px);
+        }
+      }
+
+      .img_4 {
+        @include width_height(40px, 40px);
+        background: url(../assets/face.png) $nr_tp_c;
+        @include center_contain(center, 60px);
+
+        @media screen and(max-width: 1500px) {
+          @include width_height(30px, 30px);
+        }
+
+        @media screen and(max-width: 1300px) {
+          @include width_height(25px, 25px);
+        }
+      }
+
+      .img_5 {
+        @include width_height(40px, 40px);
+        background: url(https://image.flaticon.com/icons/png/512/408/408771.png)
+          $nr_tp_c;
+        @include center_contain(center, contain);
+
+        @media screen and(max-width: 1500px) {
+          @include width_height(30px, 30px);
+        }
+
+        @media screen and(max-width: 1300px) {
+          @include width_height(25px, 25px);
+        }
+      }
+
+      .href {
+        width: 100%;
+        margin-left: 5px;
+
+        a {
+          color: darkgray;
+          font-size: 1.1em;
+          letter-spacing: 2px;
+          text-decoration: none;
+          font-family: cursive;
+        }
+      }
+    }
+  }
+}

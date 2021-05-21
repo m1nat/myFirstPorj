@@ -1,0 +1,566 @@
+@import "./mixin.scss";
+
+main {
+  @include width_height(100%, 700px);
+  margin-top: 40px;
+  @include flexCentetSpaceEvenly(flex, space-evenly, center);
+
+  @media screen and (max-width: 954px) {
+    margin-top: 0px;
+    @include width_height(100%, 500px);
+  }
+
+  @media screen and (max-width: 372px) {
+    margin-top: 30px;
+  }
+
+  .news {
+    @include width_height(200px, 700px);
+    @include flexSpaceEvenlyCentetColumn(flex, space-between, center, column);
+
+    @media screen and (max-width: 954px) {
+      display: none;
+    }
+
+    .news_block {
+      margin: 0px;
+      padding: 0px;
+      @include width_height(100%, 100%);
+      @include flexCenterSpaceBetween(flex, center, space-between);
+
+      .news_img {
+        @include width_height(200px, 100%);
+        background: url(../assets/1904_evroopt.jpg) no-repeat;
+        @include center_contain(center, contain);
+        transition-duration: 1s;
+
+        @media screen and (max-width: 1500px) {
+          @include width_height(180px, 100%);
+        }
+
+        &:hover {
+          @include width_height(350px, 150%);
+          z-index: 1;
+        }
+      }
+
+      .news_img_2 {
+        @include width_height(200px, 100%);
+        background: url(../assets/1504_eurospar.jpg) no-repeat;
+        @include center_contain(center, contain);
+        transition-duration: 1s;
+
+        @media screen and (max-width: 1500px) {
+          @include width_height(180px, 100%);
+        }
+
+        &:hover {
+          @include width_height(350px, 170%);
+          z-index: 1;
+        }
+      }
+
+      .news_img_3 {
+        @include width_height(200px, 100%);
+        background: url(../assets/2304_gippo.jpg) no-repeat;
+        @include center_contain(center, contain);
+        transition-duration: 1s;
+
+        @media screen and (max-width: 1500px) {
+          @include width_height(180px, 100%);
+        }
+
+        &:hover {
+          @include width_height(390px, 170%);
+          z-index: 1;
+        }
+      }
+
+      .news_img_4 {
+        @include width_height(200px, 100%);
+        background: url(../assets/1404_green.jpg) no-repeat;
+        @include center_contain(center, contain);
+        transition-duration: 1s;
+
+        @media screen and (max-width: 1500px) {
+          @include width_height(180px, 100%);
+        }
+
+        &:hover {
+          @include width_height(390px, 170%);
+          z-index: 1;
+        }
+      }
+
+      .news_img_5 {
+        @include width_height(200px, 100%);
+        background: url(../assets/0421_ksk.jpg) no-repeat;
+        @include center_contain(center, contain);
+        transition-duration: 1s;
+
+        @media screen and (max-width: 1500px) {
+          @include width_height(180px, 100%);
+        }
+
+        &:hover {
+          @include width_height(390px, 170%);
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+  .center {
+    @include width_height(880px, 100%);
+    @include flexColumnFlexStartCenter(flex, column, flex-start, center);
+
+    @media screen and (max-width: 1500px) {
+      width: 880px;
+    }
+
+    @media screen and (max-width: 1300px) {
+      width: 800px;
+    }
+
+    @media screen and (max-width: 1100px) {
+      width: 650px;
+    }
+
+    @media screen and (max-width: 990px) {
+      width: 550px;
+    }
+
+    @media screen and (max-width: 734px) {
+      width: 550px;
+      height: 500px;
+    }
+
+    @media screen and (max-width: 307px) {
+      @include width_height(250px, 500px);
+    }
+
+    iframe {
+      border-radius: 10px;
+      display: flex;
+
+      @media screen and (max-width: 1500px) {
+        width: 390px;
+      }
+
+      @media screen and (max-width: 1300px) {
+        width: 380px;
+      }
+
+      @media screen and (max-width: 1100px) {
+        width: 300px;
+      }
+
+      @media screen and (max-width: 990px) {
+        width: 380px;
+        margin-right: 10px;
+      }
+
+      @media screen and (max-width: 954px) {
+        @include width_height(325px, 380px);
+      }
+
+      @media screen and (max-width: 754px) {
+        @include width_height(220px, 390px);
+      }
+
+      @media screen and (max-width: 454px) {
+        @include width_height(190px, 390px);
+      }
+
+      @media screen and (max-width: 307px) {
+        @include width_height(150px, 300px);
+      }
+    }
+
+    .search {
+      @include width_height(100%, 50px);
+      display: inline-block;
+
+      @media screen and (max-width: 380px) {
+        @include width_height(250px, 40px);
+      }
+
+      form {
+        margin-left: 10%;
+        height: 50px;
+
+        input {
+          @include width_height(700px, 35px);
+          border-radius: 7px;
+          font-size: 1.5em;
+          font-family: "Bebas Neue", cursive;
+          outline: none;
+          border: none;
+          letter-spacing: 2px;
+          word-spacing: 3px;
+          background: rgb(98, 123, 124);
+          background: linear-gradient(
+            230deg,
+            rgba(98, 123, 124, 1) 7%,
+            rgba(244, 204, 120, 1) 58%
+          );
+          padding: 5px;
+          color: rgb(112, 101, 4);
+
+          @media screen and (max-width: 1500px) {
+            @include width_height(690px, 30px);
+            font-size: 1.1em;
+          }
+
+          @media screen and (max-width: 1300px) {
+            @include width_height(650px, 30px);
+            font-size: 1.1em;
+          }
+
+          @media screen and (max-width: 1100px) {
+            @include width_height(550px, 30px);
+            font-size: 1em;
+          }
+
+          @media screen and (max-width: 990px) {
+            @include width_height(480px, 25px);
+            font-size: 1em;
+          }
+
+          @media screen and (max-width: 845px) {
+            @include width_height(400px, 23px);
+            font-size: 0.9em;
+          }
+
+          @media screen and (max-width: 454px) {
+            @include width_height(350px, 23px);
+          }
+
+          @media screen and (max-width: 438px) {
+            @include width_height(190px, 20px);
+          }
+        }
+
+        button {
+          position: absolute;
+          @include width_height(30px, 30px);
+          margin-left: 15px;
+          border-radius: 7px;
+          background: url(../assets/search.png) $nr_tp_c;
+          background-position: center;
+          background-size: cover;
+
+          @media screen and (max-width: 1500px) {
+            @include width_height(25px, 25px);
+            font-size: 1em;
+          }
+
+          @media screen and (max-width: 990px) {
+            @include width_height(25px, 25px);
+            font-size: 1em;
+          }
+
+          @media screen and (max-width: 438px) {
+            @include width_height(25px, 25px);
+          }
+
+          @media screen and (max-width: 307px) {
+            @include width_height(20px, 20px);
+          }
+        }
+
+        &:invalid #btn_basket {
+          pointer-events: none;
+        }
+      }
+    }
+
+    .map_products {
+      @include width_height(850px, 100%);
+      @include flexCentetSpaceEvenly(flex, space-evenly, center);
+
+      @media screen and (max-width: 954px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include width_height(550px, 400px);
+      }
+
+      @media screen and (max-width: 454px) {
+        @include width_height(450px, 400px);
+      }
+
+      .products {
+        @include flexColumnCenterCenter(flex, column, stretch, center);
+        margin: 0px;
+
+        @media screen and (max-width: 385px) {
+          @include width_height(105px, 400px);
+          font-size: 0.4em;
+        }
+
+        .title {
+          @include width_height(100%, 50px);
+          font-weight: bolder;
+          font-size: 1.3em;
+          font-family: "Bebas Neue", cursive;
+
+          @media screen and (max-width: 1500px) {
+            width: 90%;
+            font-size: 1.1em;
+            text-align: center;
+          }
+
+          @media screen and (max-width: 1300px) {
+            width: 90%;
+            font-size: 1em;
+            text-align: center;
+          }
+
+          @media screen and (max-width: 1100px) {
+            width: 80%;
+            font-size: 0.8em;
+            text-align: center;
+          }
+
+          @media screen and (max-width: 438px) {
+            font-size: 0.6em;
+            text-align: center;
+          }
+        }
+
+        .toDo {
+          @include width_height(100%, 600px);
+          max-width: 390px;
+          font-size: 1.3em;
+          letter-spacing: 2px;
+          word-spacing: 3px;
+          overflow-y: auto;
+          padding: 10px;
+
+          @media screen and (max-width: 1300px) {
+            font-size: 1em;
+            @include width_height(100%, 550px);
+          }
+
+          @media screen and (max-width: 1100px) {
+            @include width_height(100%, 550px);
+            font-size: 0.8em;
+          }
+
+          @media screen and (max-width: 954px) {
+            @include width_height(100%, 350px);
+            font-size: 0.8em;
+          }
+
+          &::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background-color: #878a7b;
+          }
+
+          &::-webkit-scrollbar {
+            width: 12px;
+            border-radius: 10px;
+            background-color: #878a7b;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #61680b;
+          }
+
+          .checked {
+            opacity: 0.1;
+            border-radius: 5px;
+          }
+
+          .toDo_item {
+            @include flexCenterSpaceBetween(flex, center, space-between);
+            background-color: #f7ce49;
+            border-radius: 8px;
+            margin-top: 5px;
+            padding: 3px;
+
+            .description {
+              @include flexCenterSpaceBetween(flex, center, space-between);
+              @include width_height(100%, 45px);
+              border-radius: 5px;
+              padding: 5px;
+              font-family: cursive;
+              font-weight: bolder;
+            }
+
+            .btns {
+              @include flexCenterCenter(flex, center, center);
+
+              .btn-delete {
+                @include width_height(80px, 25px);
+                font-size: 0.8em;
+                font-family: cursive;
+                color: rgb(255, 238, 0);
+                border-radius: 5px;
+                outline: none;
+                background: rgb(19, 75, 77);
+                background: linear-gradient(
+                  0deg,
+                  rgba(19, 75, 77, 1) 22%,
+                  rgba(253, 187, 45, 1) 100%
+                );
+              }
+
+              .btn_complite {
+                @include width_height(30px, 70px);
+                box-shadow: 1px, 1px, 2px, 1px;
+                margin-top: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .events {
+    @include width_height(450px, 700px);
+    overflow-y: scroll;
+    @include flexColumnStartCenter(flex, column, start, center);
+
+    @media screen and (max-width: 990px) {
+      display: none;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: #575a4c;
+    }
+
+    &::-webkit-scrollbar {
+      width: 12px;
+      background-color: #575a4c;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #61680b;
+    }
+
+    .title {
+      @include width_height(240px, 30px);
+      text-align: center;
+      font-size: 1.8em;
+      color: rgb(226, 195, 21);
+      font-weight: bolder;
+
+      @media screen and (max-width: 1319px) {
+        font-size: 1.3em;
+      }
+    }
+
+    .event_news {
+      @include width_height(100%, 160px);
+      @include flexCentetSpaceEvenly(flex, space-evenly, center);
+
+      @media screen and (max-width: 1319px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .href {
+        @include width_height(350px, 100%);
+        background: url(../assets/event_evro.jpg) $nr_tp_c;
+        @include backgroundSize_marginTop(contain, 90px);
+
+        @media screen and (max-width: 1319px) {
+          margin-top: 10px;
+          width: 130px;
+        }
+
+        @media screen and (max-width: 1271px) {
+          display: none;
+        }
+      }
+
+      .href_1 {
+        @include width_height(200px, 100%);
+        background: url(../assets/almi_event.png) $nr_tp_c;
+        @include backgroundSize_marginTop(contain, 90px);
+
+        @media screen and (max-width: 1319px) {
+          margin-top: 10px;
+          width: 108px;
+          margin-right: 23px;
+        }
+
+        @media screen and (max-width: 1271px) {
+          display: none;
+        }
+      }
+
+      .href_2 {
+        @include width_height(490px, 100%);
+        background: url(../assets/gippo_events.jpg) $nr_tp_c;
+        @include backgroundSize_marginTop(contain, 90px);
+
+        @media screen and (max-width: 1319px) {
+          margin-top: 10px;
+          width: 109px;
+        }
+
+        @media screen and (max-width: 1271px) {
+          display: none;
+        }
+      }
+
+      .href_3 {
+        @include width_height(60%, 100%);
+        background: url(../assets/green_events.jpg) $nr_tp_c;
+        @include backgroundSize_marginTop(contain, 90px);
+
+        @media screen and (max-width: 1319px) {
+          margin-top: 10px;
+          width: 112 px;
+        }
+
+        @media screen and (max-width: 1271px) {
+          display: none;
+        }
+      }
+
+      .img_news {
+        margin-left: 20px;
+
+        @media screen and (max-width: 1271px) {
+          height: 160px;
+          text-align: center;
+          width: auto;
+          margin-left: 0px;
+          margin-top: 20px;
+          overflow-x: none;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 1.2em;
+          color: rgb(226, 195, 21);
+
+          @media screen and (max-width: 1500px) {
+            font-size: 1em;
+          }
+
+          @media screen and (max-width: 1378px) {
+            font-size: 0.8em;
+          }
+
+          @media screen and (max-width: 1271px) {
+            font-size: 1em;
+          }
+
+          @media screen and (max-width: 1231px) {
+            font-size: 0.7em;
+          }
+        }
+      }
+    }
+  }
+}

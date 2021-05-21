@@ -1,0 +1,175 @@
+@import "./mixin.scss";
+
+header {
+  margin-top: 0px;
+  border: 2px, red, solid;
+  @include width_height(100%, 120px);
+
+  @media screen and (max-width: 500px) {
+    @include width_height(100%, 100px);
+  }
+
+  .wrapper {
+    @include flexCenterSpaceBetween(flex, center, space-between);
+    @include width_height(100%, 100%);
+
+    @media screen and (max-width: 500px) {
+      @include width_height(100%, 100px);
+    }
+
+    .logo {
+      @include width_height(150px, 150px);
+      border: 1px, solid, black;
+      background: url(../assets/logo.png) $nr_tp_c;
+      background-size: 100%;
+      margin-top: 10px;
+      margin-left: 50px;
+
+      @media screen and (max-width: 1500px) {
+        background-size: 90%;
+      }
+
+      @media screen and (max-width: 1200px) {
+        background-size: 70%;
+      }
+
+      @media screen and (max-width: 900px) {
+        background-size: 60%;
+      }
+
+      @media screen and (max-width: 508px) {
+        background: none;
+      }
+    }
+
+    .name {
+      font-size: 1.3em;
+      margin: 0px;
+      padding: 0px;
+      @include width_height(200px, 80px);
+      border: 1px, solid, black;
+      font-family: "Bangers", cursive;
+      position: relative;
+
+      @media screen and (max-width: 1500px) {
+        font-size: 1.1em;
+      }
+
+      @media screen and (max-width: 1200px) {
+        font-size: 1em;
+      }
+
+      @media screen and (max-width: 900px) {
+        font-size: 0.8em;
+      }
+
+      @media screen and (max-width: 382px) {
+        font-size: 0.5em;
+        @include width_height(150px, 80px);
+      }
+
+      @media screen and (max-width: 329px) {
+        font-size: 0.4em;
+        @include width_height(100px, 70px);
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 0px;
+        letter-spacing: 4px;
+
+        &::first-letter {
+          color: rgb(233, 184, 61);
+          font-size: 1.7em;
+        }
+
+        span {
+          color: rgb(187, 25, 25);
+          font-size: 1.7em;
+        }
+
+        #by {
+          color: rgb(12, 116, 17);
+          font-size: 1em;
+        }
+      }
+    }
+    .renderList {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: "Kalam", cursive;
+
+      .userList {
+        @include width_height(290px, 30px);
+        font-size: 1.5em;
+        text-align: center;
+
+        @media screen and (max-width: 1500px) {
+          @include width_height(240px, 40px);
+          font-size: 1em;
+        }
+
+        @media screen and (max-width: 1200px) {
+          font-size: 0.8em;
+          margin-right: 0px;
+        }
+
+        @media screen and (max-width: 900px) {
+          font-size: 0.7em;
+          @include width_height(180px, 30px);
+        }
+      }
+
+      button {
+        @include width_height(140px, 40px);
+        margin-top: 10px;
+        margin-right: 0px;
+        border-radius: 5px;
+        outline: none;
+        -webkit-box-shadow: 20px 14px 17px 11px rgba(0, 0, 0, 0.68);
+        box-shadow: 15px 10px 12px 10px rgba(0, 0, 0, 0.68);
+        background: rgb(19, 75, 77);
+        background: linear-gradient(
+          0deg,
+          rgba(19, 75, 77, 1) 22%,
+          rgba(253, 187, 45, 1) 100%
+        );
+        transition-duration: 300ms;
+        font-family: "Marck Script", cursive;
+        font-size: 1.3em;
+
+        @media screen and (max-width: 1500px) {
+          font-size: 1em;
+          @include width_height(120px, 40px);
+        }
+
+        @media screen and (max-width: 1200px) {
+          font-size: 0.9em;
+          @include width_height(100px, 35px);
+        }
+
+        @media screen and (max-width: 900px) {
+          font-size: 0.7em;
+          @include width_height(100px, 30px);
+        }
+
+        @media screen and (max-width: 600px) {
+          font-size: 0.5em;
+          @include width_height(80px, 20px);
+        }
+
+        @media screen and (max-width: 329px) {
+          font-size: 0.3em;
+          @include width_height(50px, 15px);
+        }
+
+        &:active {
+          -webkit-box-shadow: 20px 14px 17px 11px rgba(0, 0, 0, 0.68);
+          box-shadow: 10px 5px 6px 7px rgba(0, 0, 0, 0.68);
+        }
+      }
+    }
+  }
+}

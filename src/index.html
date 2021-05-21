@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam&family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>SMART_SHOP</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="wrapper" id="header">
+      <header>
+        <div class="wrapper">
+          <div class="logo"></div>
+          <div class="name">
+            <h1>Smart<span>S</span>hop.<span id="by">b</span>y</h1>
+          </div>
+          <div class="renderList">
+            <div id="user">
+              <p id="userList" class="userList"></p>
+            </div>
+            <div class="registr">
+              <form id="form_3">
+                <button type="submit" id="redirect">Выход</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- AfterHead -->
+      <div class="afterHeader">
+        <div class="nav_value"><p>Ближайший магазин</p></div>
+        <div class="nav_value"><p>Популярные продукты</p></div>
+        <div class="nav_value"><p>Одежда</p></div>
+        <div class="nav_value"><p>Техника</p></div>
+        <div class="nav_value"><p>Зоо товары</p></div>
+        <div class="nav_value"><p>Сервисы</p></div>
+        <div class="nav_value"><p>Стороительные материалы</p></div>
+      </div>
+      <div class="wrapper_logo">
+        <div class="logo_shop"></div>
+        <div class="logo_shop_1"></div>
+        <div class="logo_shop_2"></div>
+        <div class="logo_shop_3"></div>
+        <div class="logo_shop_4"></div>
+        <div class="logo_shop_5"></div>
+      </div>
+      <!-- MAIN -->
+      <main>
+        <div class="news">
+          <div class="news_block">
+            <div class="news_img"></div>
+          </div>
+          <div class="news_block">
+            <div class="news_img_2"></div>
+          </div>
+          <div class="news_block">
+            <div class="news_img_3"></div>
+          </div>
+          <div class="news_block">
+            <div class="news_img_4"></div>
+          </div>
+          <div class="news_block">
+            <div class="news_img_5"></div>
+          </div>
+        </div>
+        <div class="center">
+          <div class="search">
+            <form>
+              <label for="search"></label>
+              <input
+                type="text"
+                name="search"
+                id="basket_input"
+                placeholder="Введите название товара..."
+                maxlength="16"
+                required
+              />
+              <button type="button" id="btn_basket"></button>
+            </form>
+          </div>
+          <div class="map_products">
+            <div class="products">
+              <div class="title"><p>Список выбранных товаров товаров:</p></div>
+              <div class="wrapper_list">
+                <div class="toDo" id="toDo"></div>
+            </div>
+            </div>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5848.508298798211!2d74.5708881!3d42.8674796!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1619345377788!5m2!1sru!2sby"
+                width="450"
+                height="650"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="events">
+          <div class="title"><p>Новости</p></div>
+          <div class="event_news">
+            <div class="href"></div>
+            <div class="img_news">
+              <a href="https://evroopt.by/news/">
+                Моментальные розыгрыши призов в игре «Удача в придачу!»
+                возвращаются,а их география расширяется!
+              </a>
+            </div>
+          </div>
+          <div class="event_news">
+            <div class="href_1"></div>
+            <div class="img_news">
+              <a href="https://almi.by/catalog/">
+                Самые интересные предложения по самым выгодным ценам!
+              </a>
+            </div>
+          </div>
+          <div class="event_news">
+            <div class="href_2"></div>
+            <div class="img_news">
+              <a
+                href="https://gippo.by/about/news/2021/otkrytie_novogo_supermarketa_na_ul_asanalieva/"
+              >
+                Приглашаем на долгожданное открытие магазина ГИППО в г. Минскб
+                ул. Асаналиеваб 40/1! Новый магазин распахнет свои двери 9
+                апреля в 15:00
+              </a>
+            </div>
+          </div>
+          <div class="event_news">
+            <div class="href_3"></div>
+            <div class="img_news">
+              <a href="https://evroopt.by/news/">
+                У вас день рождения? А в гипермаркетах GREEN скидки для
+                именинников!
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <h1 id="events_title">Акционные товары:</h1>
+      <!-- Navigator_of_events -->
+      <div class="events__nav">
+        <div class="events__nav__prod">
+          <div class="prod" id="prod_1"></div>
+          <div class="prod" id="prod_2"></div>
+          <div class="prod" id="prod_3"></div>
+          <div class="prod" id="prod_4"></div>
+          <div class="prod" id="prod_5"></div>
+        </div>
+        <div class="events__nav__prod">
+          <div class="prod" id="prod_6"></div>
+          <div class="prod" id="prod_7"></div>
+          <div class="prod" id="prod_8"></div>
+          <div class="prod" id="prod_9"></div>
+          <div class="prod" id="prod_10"></div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer>
+        <div class="contact">
+          <div class="logo_footer"></div>
+        </div>
+        <div class="contact_">
+          <div class="event_list">
+            <h2>Связь:</h2>
+            <div class="event_list__">Call центр</div>
+            <div class="event_list__">Наши контакты</div>
+            <div class="event_list__">Адреса магазинов</div>
+            <div class="event_list__">Партнеры</div>
+            <div class="event_list__">Вакансии</div>
+          </div>
+          <div class="event_list">
+            <h2>Акции:</h2>
+            <div class="event_list__">Главные акции</div>
+            <div class="event_list__">Не пропустите</div>
+            <div class="event_list__">Новости</div>
+            <div class="event_list__">Помощь</div>
+            <div class="event_list__">Клуб покупателей</div>
+          </div>
+          <div class="event_list">
+            <h2>Доставка:</h2>
+            <div class="event_list__">Покупай по безналу</div>
+            <div class="event_list__">Обмен и возврат товара</div>
+            <div class="event_list__">Подарочные карты</div>
+            <div class="event_list__">Доставка</div>
+            <div class="event_list__">Что с моим заказом</div>
+          </div>
+        </div>
+        <div class="contact__">
+          <div class="social_network">
+            <div class="social_network_name">
+              <div class="img_1"></div>
+              <div class="href">
+                <a href="https://vk.com/" target="_blank">VK.com</a>
+              </div>
+            </div>
+            <div class="social_network_name">
+              <div class="img_2"></div>
+              <div class="href">
+                <a href="https://www.instagram.com/" target="_blank"
+                  >Instagram</a
+                >
+              </div>
+            </div>
+            <div class="social_network_name">
+              <div class="img_3"></div>
+              <div class="href">
+                <a href="https://ok.ru/" target="_blank">OK.ru</a>
+              </div>
+            </div>
+            <div class="social_network_name">
+              <div class="img_4"></div>
+              <div class="href">
+                <a href="https://www.facebook.com/" target="_blank"
+                  >Facebook.com</a
+                >
+              </div>
+            </div>
+            <div class="social_network_name">
+              <div class="img_5"></div>
+              <div class="href">
+                <a href="https://www.viber.com/" target="_blank">Viber</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+@import "./mixin.scss";
+
+.wrapper_logo {
+  @include width_height(100%, 134px);
+  @include flexCentetSpaceEvenly(flex, space-evenly, center);
+
+  @media screen and (max-width: 372px) {
+    display: none;
+  }
+
+  .logo_shop {
+    @include width_height(170px, 130px);
+    background: url(../assets/ksk.png) $nr_tp_c;
+    @include center_contain(center, contain);
+  }
+
+  .logo_shop_1 {
+    @include width_height(170px, 130px);
+    background: url(../assets/gippo-logo.png) $nr_tp_c;
+    @include center_contain(center, contain);
+  }
+
+  .logo_shop_2 {
+    @include width_height(170px, 130px);
+    background: url(../assets/Green.png) $nr_tp_c;
+    @include center_contain(center, contain);
+  }
+
+  .logo_shop_3 {
+    @include width_height(170px, 130px);
+    background: url(../assets/Mandarin.png) $nr_tp_c;
+    @include center_contain(center, contain);
+  }
+
+  .logo_shop_4 {
+    @include width_height(170px, 130px);
+    background: url(../assets/almi.png) $nr_tp_c;
+    @include center_contain(center, contain);
+  }
+
+  .logo_shop_5 {
+    @include width_height(170px, 130px);
+    background: url(../assets/Logo_euroopt.png) $nr_tp_c;
+    @include center_contain(center, contain);
+  }
+}

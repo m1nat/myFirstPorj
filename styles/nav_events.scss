@@ -1,0 +1,107 @@
+@import "./mixin.scss";
+
+#events_title {
+  text-align: center;
+  margin-top: 35px;
+  font-family: cursive;
+  color: rgb(255, 230, 0);
+
+  @media screen and(max-width: 1500px) {
+    margin-top: 25px;
+    font-size: 1.5em;
+  }
+
+  @media screen and(max-width: 800px) {
+    margin-top: 1px;
+    font-size: 1.3em;
+  }
+}
+
+.events__nav {
+  @include flexSpaceEvenlyCentetColumn(flex, space-evenly, center, column);
+  @include width_height(100%, 500px);
+  padding: 10px;
+
+  @media screen and(max-width: 1500px) {
+    @include width_height(100%, 450px);
+  }
+
+  @media screen and(max-width: 1300px) {
+    @include width_height(100%, 400px);
+  }
+
+  @media screen and(max-width: 1100px) {
+    @include width_height(100%, 350px);
+  }
+
+  @media screen and(max-width: 800px) {
+    @include width_height(100%, 300px);
+  }
+
+  @media screen and(max-width: 450px) {
+    @include width_height(100%, 220px);
+  }
+
+  .events__nav__prod {
+    @include flexCenterSpaceAround(flex, center, space-around);
+    @include width_height(100%, 50%);
+    margin-top: 40px;
+    padding: 10px;
+
+    .prod {
+      margin-top: 20px;
+      @include width_height(20%, 100%);
+      transition-duration: 500ms;
+    }
+
+    #prod_1 {
+      background: url(../assets/meat.png) $nr_tp_c;
+      @include center_contain(65%, contain);
+    }
+
+    #prod_2 {
+      background: url(../assets/milkavita.png) $nr_tp_c;
+      @include center_contain(center, contain);
+    }
+
+    #prod_3 {
+      background: url(../assets/tarelka.png) $nr_tp_c;
+      @include center_contain(center, contain);
+    }
+
+    #prod_4 {
+      background: url(../assets/grechka.png) $nr_tp_c;
+      @include center_contain(center, contain);
+    }
+
+    #prod_5 {
+      background: url(../assets/sugar.png) $nr_tp_c;
+      @include center_contain(center, contain);
+    }
+
+    #prod_6 {
+      background: url(../assets/fish.png) $nr_tp_c;
+      @include center_contain(center, contain);
+    }
+
+    #prod_7 {
+      background: url(../assets/washing_powder_PNG36.png) $nr_tp_c;
+      @include center_contain(center, contain);
+    }
+
+    #prod_8 {
+      background: url(../assets/domestic.png) $nr_tp_c;
+      @include center_contain(center, contain);
+    }
+
+    #prod_9 {
+      background: url(../assets/chain_saw_PNG18528.png) $nr_tp_c;
+      @include center_contain(center, contain);
+    }
+
+    #prod_10 {
+      background: url(../assets/televizion-samsung.png) $nr_tp_c;
+      @include center_contain(center, contain);
+    }
+  }
+}

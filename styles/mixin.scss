@@ -1,0 +1,87 @@
+@mixin flexCentetSpaceEvenly($fl, $jcse, $ctr) {
+  display: $fl;
+  justify-content: $jcse;
+  align-items: $ctr;
+}
+
+@mixin flexCenterSpaceBetween($fl, $ctr, $spbt) {
+  display: $fl;
+  align-items: $ctr;
+  justify-content: $spbt;
+}
+
+@mixin flexColumnCenter($fl, $clmn, $ctr) {
+  display: $fl;
+  flex-direction: $clmn;
+  text-align: $ctr;
+}
+
+@mixin flexSpaceEvenlyCentetColumn($fl, $spev, $ctr, $clmn) {
+  display: $fl;
+  justify-content: $spev;
+  align-items: $ctr;
+  flex-direction: $clmn;
+}
+
+@mixin flexColumnFlexStartCenter($fl, $clmn, $flstrt, $ctr) {
+  display: $fl;
+  flex-direction: $clmn;
+  justify-content: $flstrt;
+  align-items: $ctr;
+}
+
+@mixin flexColumnCenterCenter($fl, $clmn, $str, $ctr) {
+  display: $fl;
+  flex-direction: $clmn;
+  align-items: $str;
+  justify-content: $ctr;
+}
+
+@mixin flexCenterCenter($fl, $ctr, $ctr1) {
+  display: $fl;
+  justify-content: $ctr;
+  align-items: $ctr1;
+}
+
+@mixin flexColumnStartCenter($fl, $clmn, $str, $ctr) {
+  display: $fl;
+  flex-direction: $clmn;
+  justify-content: $str;
+  align-items: $ctr;
+}
+
+@mixin flexCenterSpaceAround($fl, $ctr, $spar) {
+  display: $fl;
+  align-items: $ctr;
+  justify-content: $spar;
+}
+
+@mixin flexStretchCenter($fl, $strch, $ctr) {
+  display: $fl;
+  justify-content: $strch;
+  align-items: $ctr;
+}
+
+@mixin flexSpaceBetweenCenterColumn($fl, $spbt, $ctr, $clmn) {
+  display: $fl;
+  justify-content: $spbt;
+  align-items: $ctr;
+  flex-direction: $clmn;
+}
+
+@mixin center_contain($ctr, $cont) {
+  background-position: $ctr;
+  background-size: $cont;
+}
+
+@mixin backgroundSize_marginTop($sz, $mrgtop) {
+  background-size: $sz;
+  margin-top: $mrgtop;
+}
+
+@mixin width_height($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+$nr_tp_c: no-repeat, top, center;

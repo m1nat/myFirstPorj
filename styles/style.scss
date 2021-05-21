@@ -1,0 +1,26 @@
+@import "./header.scss";
+@import "./sign-up.scss";
+@import "./modal.scss";
+@import "./logo_shop.scss";
+@import "./nav.scss";
+@import "./main.scss";
+@import "./nav_events.scss";
+@import "./foot.scss";
+@import "./prod_list.scss";
+@import "./mixin.scss";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: url(../assets/gradientandroid-iphone-desktop-hd-backgrounds-wallpapers-1080p-4k-u0yp6-1920x1080.jpg)
+      no-repeat,
+    center, top;
+  background-size: cover;
+  background-attachment: fixed;
+}

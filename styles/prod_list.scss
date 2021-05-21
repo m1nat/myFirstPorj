@@ -1,0 +1,46 @@
+@import "./mixin.scss";
+
+.ulList {
+  width: 100%;
+
+  .list {
+    color: rgb(3, 16, 73);
+    font-family: cursive;
+    list-style: none;
+    font-size: 0.9em;
+    width: auto;
+    height: auto;
+    background-color: rgb(236, 47, 47);
+    margin-top: 5px;
+    border-radius: 5px;
+
+    @media screen and(max-width: 1500px) {
+      font-size: 0.8em;
+    }
+
+    @media screen and(max-width: 800px) {
+      font-size: 0.7em;
+    }
+
+    @media screen and(max-width: 400px) {
+      font-size: 0.7em;
+    }
+
+  }
+
+  .clicked_Li {
+    background-color: rgb(75, 238, 75);
+    opacity: 0.3;
+    border-radius: 5px;
+  }
+
+  .btnRemove {
+    @include width_height(15px, 15px);
+    background: url(http://s1.iconbird.com/ico/2013/9/452/w448h5121380477116trash.png)
+        no-repeat,
+      top, center;
+    background-size: contain;
+    border: none;
+    margin-left: 10px;
+  }
+}
